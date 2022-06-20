@@ -17,14 +17,15 @@ Linux:
 
 ## How to use
 Windows:
-1. Save the script to a directory of your choice.
-4. Execute the script as administrator.
-5. When done, the script will generate a zip file under `%TEMP%` which includes all relevant information.
+1. Download `AZCMAgent_troubleshooter.ps1` and save it to a directory of your choice.
+2. Execute the script as administrator.
+3. When done, the script will generate a zip file under `%TEMP%` which includes all relevant information.
 
 Linux:
-1. Save the script to a directory of your choice.
-2. Run `main.py` with root permissions.
-3. When done, the script will generate a zip file under `/tmp` which includes all relevant information.
+1. Download `azcmagent_troubleshooter_script.tar.gz` and save it to a directory of your choice.
+2. Extract the contents of the tar ball using `tar -xvf azcmagent_troubleshooter_script.tar.gz`.
+3. Run `main.py` with root permissions.
+4. When done, the script will generate a zip file under `/tmp` which includes all relevant information.
 
 ## Questions
 If you have any questions on how the script works feel free to reach out to me / create an issue in this github.
