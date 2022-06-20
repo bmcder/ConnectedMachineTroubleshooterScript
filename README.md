@@ -23,7 +23,7 @@ Windows:
 
 Linux:
 1. Save the script to a directory of your choice.
-2. Run the script with root permissions.
+2. Run `main.py` with root permissions.
 3. When done, the script will generate a zip file under `/tmp` which includes all relevant information.
 
 ## Questions
