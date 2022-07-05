@@ -13,7 +13,7 @@ Windows:
 
 Linux:
 * Python 3.8.
-* run script as root.
+* Run script as root.
 
 ## How to use
 Windows:
