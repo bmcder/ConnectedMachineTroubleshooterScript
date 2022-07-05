@@ -12,7 +12,7 @@ Windows:
 * User that can run powershell scripts as administrator.
 
 Linux:
-* Python 3.
+* Python 3.8.
 * run script as root.
 
 ## How to use
