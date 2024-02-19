@@ -10,6 +10,14 @@ Troubleshooter script for Azure Arc enabled servers [connected machine agent (az
 Windows:
 * Powershell 5.1+.
 * User that can run powershell scripts as administrator.
+* This script is unsigned, and so the PowerShell execution policy would have to be set to Unrestricted in order to run it.
+   To do this first check the policy with
+   `Get-ExecutionPolicy`
+   and note the current execution policy, e.g. `RemoteSigned`
+   then set the policy temporarily to 
+   `Set-ExecutionPolicy "Unrestricted"`
+   then run the script and set the policy back to whatever the original noted policy setting was, e.g.
+   `Set-ExecutionPolicy "RemoteSigned"`
 
 Linux:
 * Python 3.8.
