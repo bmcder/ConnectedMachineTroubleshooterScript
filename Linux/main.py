@@ -9,10 +9,8 @@ from shutil import make_archive
 import socket
 
 timestamp_format = "%Y-%m-%d %H-%M-%S"
-#workdir = "/tmp/azcmagent-troubleshooter-{}-{}".format(datetime.datetime.now().strftime(timestamp_format),platform.node())
-workdir = "C:\\Users\\omerroth\\AppData\Local\\Temp\\azcmagent-troubleshooter-{}-{}".format(datetime.now().strftime(timestamp_format),platform.node())
-troubleshooter_log = workdir + "\\troubleshooter.log"
-#troubleshooter_log = workdir + "/troubleshooter.log"
+workdir = "/tmp/azcmagent-troubleshooter-{}-{}".format(datetime.datetime.now().strftime(timestamp_format),platform.node())
+troubleshooter_log = workdir + "/troubleshooter.log"
 
 
 def initialize_script() -> None:
@@ -174,10 +172,8 @@ from shutil import make_archive
 import socket
 
 timestamp_format = "%Y-%m-%d %H-%M-%S"
-#workdir = "/tmp/azcmagent-troubleshooter-{}-{}".format(datetime.datetime.now().strftime(timestamp_format),platform.node())
-workdir = "C:\\Users\\omerroth\\AppData\Local\\Temp\\azcmagent-troubleshooter-{}-{}".format(datetime.now().strftime(timestamp_format),platform.node())
-troubleshooter_log = workdir + "\\troubleshooter.log"
-#troubleshooter_log = workdir + "/troubleshooter.log"
+workdir = "/tmp/azcmagent-troubleshooter-{}-{}".format(datetime.datetime.now().strftime(timestamp_format),platform.node())
+troubleshooter_log = workdir + "/troubleshooter.log"
 
 
 def initialize_script() -> None:
@@ -304,9 +300,8 @@ def network_check() -> None:
         logger.writeLine(ArcLoggerLevel.Error,"NetworkCheck",F"Failed to check network. Reason: {e}")
 
 def collect_extensions() -> None:
-    #extensions_reports_dir = "/var/lib/GuestConfig/extension_reports"
-    extensions_reports_dir = "C:\\ProgramData\\GuestConfig\\extension_reports"
-
+    extensions_reports_dir = "/var/lib/GuestConfig/extension_reports"
+    
     logger.writeLineToLog(ArcLoggerLevel.Debug,"ExtensionReport",F"Collecting extension reports from: {extensions_reports_dir}")
 
     try:
